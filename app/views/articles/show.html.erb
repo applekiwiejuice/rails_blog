@@ -2,7 +2,10 @@
 
 <p><%= @article.body %></p>
 
+<p><%= @comment %></p>
+
 <ul>
+  <li><%= link_to 'Comments', article_comments_path(@article) %> </li>
   <li><%= link_to 'Edit', edit_article_path(@article) %> </li>
   <li><%= link_to 'Delete', article_path(@article), method: :delete %></li>
 </ul>
