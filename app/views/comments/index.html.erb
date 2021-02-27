@@ -1,8 +1,10 @@
-<table>
+<h1>Comments</h1>
+
+<table class="table">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>Body</th>
+      <th scope="col">ID</th>
+      <th scope="col">Comments</th>
   </thead>
 
   <tbody>
@@ -15,6 +17,4 @@
   </tbody>
 </table>
 
-<%= link_to 'Add Comment', new_article_comment_path(@article) %>
-
-<a href="/">Home</a>
+<%= link_to 'Add Comment', new_article_comment_path(@article), class: "btn btn-primary" %>

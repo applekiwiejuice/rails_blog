@@ -1,13 +1,9 @@
-<h1>My Blog</h1>
+<h1>My Blogs</h1>
 
-<ul>
   <% @articles.each do |article| %>
-    <li>
-
+    <h3>
     <%= link_to article.title, article %>
-
-    </li>
+    </h3>
+    <p>Created at: <%= article.created_at %></p>
+    <p>Updated at: <%= article.updated_at %></p>
   <% end %>
-</ul>
-
-<%= link_to "New Article", new_article_path %>

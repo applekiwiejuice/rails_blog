@@ -1,15 +1,7 @@
 <h1><%= @article.title %> </h1>
 
 <p><%= @article.body %></p>
-
-<p><%= @comment %></p>
-
-<ul>
-  <li><%= link_to 'Comments', article_comments_path(@article) %> </li>
-  <li><%= link_to 'Edit', edit_article_path(@article) %> </li>
-  <li><%= link_to 'Delete', article_path(@article), method: :delete %></li>
-</ul>
-
-
-
-<a href="/">Home</a>
+<hr>
+<p><%= link_to 'Comments', article_comments_path(@article), class: "btn btn-primary" %> </p>
+<p><%= link_to 'Edit', edit_article_path(@article), class: "btn btn-primary" %> </p>
+<p><%= link_to 'Delete', article_path(@article), method: :delete, class: "btn btn-primary" %></p>
